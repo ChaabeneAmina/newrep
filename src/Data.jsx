@@ -1,7 +1,7 @@
 export const Hotels = [
   {
     id: 1,
-    name: "ROYAL GARDEN PALACE DJERBA",
+    name: "ROYAL GARDEN PALACE DJERBA ALO ALO",
     description: "Venez découvrir l'île de Djerba, en Tunisie et séjournez au Royal Garden Palace, un hôtel cinq étoiles de luxe alliant confort, calme et convivialité.",
     price: 199,
     image: "https://image.resabooking.com/images/image_panoramique/Royal_Garden_Palace_2.jpg",
