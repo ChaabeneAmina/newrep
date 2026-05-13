@@ -1,0 +1,90 @@
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: 'Cinzel', serif;
+}
+
+.about-container h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #3fa2c6;
+}
+
+.about-container h2 {
+  margin-top: 25px;
+  color: #3fa2c6;
+}
+
+.about-container p {
+  line-height: 1.6;
+  color: black;
+}
+
+.highlight {
+  color: #3fa2c6;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.team-member {
+  width: 150px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.world-map {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer table th,
+.footer table td {
+  color: #3fa2c6;
+  padding: 5px 10px;
+}
+
+.btn-footer {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #3fa2c6;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-footer:hover {
+  background-color: black;
+  color: #3fa2c6;
+  transform: scale(1.05);
+}
