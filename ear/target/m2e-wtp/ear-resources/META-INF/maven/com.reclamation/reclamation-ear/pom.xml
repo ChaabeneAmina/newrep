@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.reclamation</groupId>
+        <artifactId>reclamation-parent</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>reclamation-ear</artifactId>
+    <packaging>ear</packaging>
+    <name>EAR - Déploiement Réclamations</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.reclamation</groupId>
+            <artifactId>reclamation-ejb</artifactId>
+            <version>1.0</version>
+            <type>ejb</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <version>8</version>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <modules>
+                        <ejbModule>
+                            <groupId>com.reclamation</groupId>
+                            <artifactId>reclamation-ejb</artifactId>
+                            <bundleFileName>reclamation-ejb.jar</bundleFileName>
+                        </ejbModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
